@@ -25,7 +25,7 @@ def get_model(name, vocab_size, emb, hid, seq_len):
     elif name == 'rnn':
         return RNNLanguageModel(vocab_size, emb, hid)
     elif name == 'transformer':
-        return TransformerLanguageModel(vocab_size, emb, hid, max_seq_len=seq_len)
+        return TransformerLanguageModel(vocab_size, emb, hid, max_seq_length=seq_len)
     else:
         raise ValueError("Unsupported model")
 
