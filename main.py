@@ -2,7 +2,7 @@ import argparse
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader, random_split
-from txt_model import (
+from text_model import (
     read_all_texts_from_folder,
     load_tokenizer,
     TextDataset,
